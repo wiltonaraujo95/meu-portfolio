@@ -8,9 +8,14 @@
     $para = "wiltonsilva.wtn@hotmail.com";
     $assunto = "Coleta de contato - Portfólio";
 
-    $corpo = "nome: ".$nome."\n"."E-mail: ".$email."\n"."Telefone: ".$telefone."\n"."Mensagem: ".$mensagem;
+    $corpo = "nome: ".$nome. "\n".
+            "E-mail: ".$email. "\n".
+            "Telefone: ".$telefone."\n".
+            "Mensagem: ".$mensagem;
 
-    $cabeca = "From: itinhodmai@gmail.com"."\n"."Reply-to: ".$email."\n"."X-mailer:PHP/".phpversion();
+    $cabeca = "From: itinhodmai@gmail.com"."\n".
+                "Reply-to: ".$email."\n".
+                "X-mailer:PHP/".phpversion();
 
     if(mail($para,$assunto,$corpo,$cabeca)){
         echo("E-mail enviado com sucesso!");
